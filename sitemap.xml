@@ -3,14 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>/blog/hello/</loc>
-    <lastmod>2023-12-31T23:16:08+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>/blog/</loc>
-    <lastmod>2023-12-31T23:16:08+08:00</lastmod>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -22,7 +16,7 @@
   </url>
   <url>
     <loc>/</loc>
-    <lastmod>2023-12-31T23:16:08+08:00</lastmod>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
