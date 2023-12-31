@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>content creation on 四海</title>
+    <link>/tags/content-creation/</link>
+    <description>Recent content in content creation on 四海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 四海</copyright>
+    <lastBuildDate>Sun, 31 Dec 2023 23:16:08 +0800</lastBuildDate><atom:link href="/tags/content-creation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为什么写博客？</title>
+      <link>/blog/why-blog/</link>
+      <pubDate>Sun, 31 Dec 2023 23:16:08 +0800</pubDate>
+      
+      <guid>/blog/why-blog/</guid>
+      <description>抓紧时间</description>
+      
+    </item>
+    
+  </channel>
+</rss>
