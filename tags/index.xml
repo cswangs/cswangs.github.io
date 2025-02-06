@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 王春盛</copyright>
-    <lastBuildDate>Wed, 21 Feb 2024 19:44:34 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Feb 2025 19:44:34 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iTerm2</title>
+      <link>/tags/iterm2/</link>
+      <pubDate>Wed, 05 Feb 2025 19:44:34 +0800</pubDate>
+      
+      <guid>/tags/iterm2/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>oh my zsh</title>
+      <link>/tags/oh-my-zsh/</link>
+      <pubDate>Wed, 05 Feb 2025 19:44:34 +0800</pubDate>
+      
+      <guid>/tags/oh-my-zsh/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>zsh</title>
+      <link>/tags/zsh/</link>
+      <pubDate>Wed, 05 Feb 2025 19:44:34 +0800</pubDate>
+      
+      <guid>/tags/zsh/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>blowfish</title>
       <link>/tags/blowfish/</link>
