@@ -101,7 +101,7 @@
     "keywords": ["iTerm2","zsh","oh my zsh"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "517"
+    "wordCount": "716"
   }]
   </script>
 
@@ -775,6 +775,7 @@
       <ul>
         <li><a href="#41-语法高亮插件">4.1 语法高亮插件</a></li>
         <li><a href="#42-自动补全插件">4.2 自动补全插件</a></li>
+        <li><a href="#43-autojump-安装">4.3 autojump 安装</a></li>
         <li><a href="#43-启用插件">4.3 启用插件</a></li>
       </ul>
     </li>
@@ -793,6 +794,12 @@
         <li><a href="#91-终端启动速度慢">9.1 终端启动速度慢</a></li>
         <li><a href="#92-字体显示异常">9.2 字体显示异常</a></li>
         <li><a href="#93-复制粘贴问题">9.3 复制粘贴问题</a></li>
+      </ul>
+    </li>
+    <li><a href="#10-其他">10. 其他</a>
+      <ul>
+        <li><a href="#vim-推荐配置">vim 推荐配置</a></li>
+        <li><a href="#git-alias-配置推荐展示更丰富的分支commit信息">git alias 配置推荐（展示更丰富的分支commit信息）</a></li>
       </ul>
     </li>
   </ul>
@@ -820,6 +827,7 @@
       <ul>
         <li><a href="#41-语法高亮插件">4.1 语法高亮插件</a></li>
         <li><a href="#42-自动补全插件">4.2 自动补全插件</a></li>
+        <li><a href="#43-autojump-安装">4.3 autojump 安装</a></li>
         <li><a href="#43-启用插件">4.3 启用插件</a></li>
       </ul>
     </li>
@@ -838,6 +846,12 @@
         <li><a href="#91-终端启动速度慢">9.1 终端启动速度慢</a></li>
         <li><a href="#92-字体显示异常">9.2 字体显示异常</a></li>
         <li><a href="#93-复制粘贴问题">9.3 复制粘贴问题</a></li>
+      </ul>
+    </li>
+    <li><a href="#10-其他">10. 其他</a>
+      <ul>
+        <li><a href="#vim-推荐配置">vim 推荐配置</a></li>
+        <li><a href="#git-alias-配置推荐展示更丰富的分支commit信息">git alias 配置推荐（展示更丰富的分支commit信息）</a></li>
       </ul>
     </li>
   </ul>
@@ -960,7 +974,8 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> ~/.zshrc
 </span></span></code></pre></div><p>首次加载会进入主题配置向导，根据个人喜好进行配置即可。如需重新配置，可执行：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">p10k configure
-</span></span></code></pre></div><h3 class="relative group">3.2 安装字体 
+</span></span></code></pre></div><p>这里配置时注意，第一个选项是否安装字体可能会失败！！！可以先<strong>选择不安装</strong></p>
+<h3 class="relative group">3.2 安装字体 
     <div id="32-安装字体" class="anchor"></div>
     
     <span
@@ -971,8 +986,7 @@
     
 </h3>
 <p>为了正确显示主题的特殊字符，需要安装 Nerd Font：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew tap homebrew/cask-fonts
-</span></span><span class="line"><span class="cl">brew install --cask font-hack-nerd-font
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew install --cask font-hack-nerd-font
 </span></span></code></pre></div><p>在 iTerm2 中设置字体：
 Preferences → Profiles → Text → Font → 选择 Hack Nerd Font</p>
 <h2 class="relative group">4. 安装插件 
@@ -1007,6 +1021,17 @@ Preferences → Profiles → Text → Font → 选择 Hack Nerd Font</p>
     
 </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/zsh-users/zsh-autosuggestions <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-autosuggestions
+</span></span></code></pre></div><h3 class="relative group">4.3 autojump 安装 
+    <div id="43-autojump-安装" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#43-autojump-%e5%ae%89%e8%a3%85" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew install auto jump
 </span></span></code></pre></div><h3 class="relative group">4.3 启用插件 
     <div id="43-启用插件" class="anchor"></div>
     
@@ -1094,13 +1119,13 @@ Preferences → Keys → Hotkey → Create a Dedicated Hotkey Window
     
 </h3>
 <ol>
-<li>下载配色方案：</li>
+<li>下载配色方案:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git
 </span></span></code></pre></div><ol start="2">
 <li>
-<p>导入配色方案：
-Preferences → Profiles → Colors → Color Presets → Import</p>
+<p>导入配色方案:</p>
+<p>Preferences → Profiles → Colors → Color Presets → Import</p>
 <p>
 
 
@@ -1311,9 +1336,14 @@ Preferences → Profiles → Terminal → Notifications → Silence bell</li>
     
 </h3>
 <ol>
-<li>使用按需加载：将 nvm、conda 等环境配置改为手动加载</li>
-<li>减少不必要的插件：只保留常用的 oh-my-zsh 插件</li>
-<li>使用 <code>zprof</code> 分析启动性能：
+<li>
+<p>使用按需加载：将 nvm、conda 等环境配置改为手动加载</p>
+</li>
+<li>
+<p>减少不必要的插件：只保留常用的 oh-my-zsh 插件</p>
+</li>
+<li>
+<p>使用 <code>zprof</code> 分析启动性能：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 在 .zshrc 文件最开始添加</span>
 </span></span><span class="line"><span class="cl">zmodload zsh/zprof
 </span></span><span class="line"><span class="cl"><span class="c1"># 在 .zshrc 文件最后添加</span>
@@ -1350,7 +1380,85 @@ Preferences → Profiles → Terminal → Notifications → Silence bell</li>
 <li>使用 Command + C/V 进行复制粘贴</li>
 <li>在 vim 中使用 visual 模式时，按住 Option 键进行选择复制</li>
 </ol>
-
+<h2 class="relative group">10. 其他 
+    <div id="10-其他" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#10-%e5%85%b6%e4%bb%96" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<h3 class="relative group">vim 推荐配置 
+    <div id="vim-推荐配置" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vim-%e6%8e%a8%e8%8d%90%e9%85%8d%e7%bd%ae" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>修改 .vimrc 文件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="s2">&#34; Configuration file for vim
+</span></span></span><span class="line"><span class="cl"><span class="s2">set modelines=0
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span> Normally we use vim-extensions. If you want <span class="nb">true</span> vi-compatibility
+</span></span><span class="line"><span class="cl"><span class="s2">&#34; remove change the following statements
+</span></span></span><span class="line"><span class="cl"><span class="s2">set nocompatible
+</span></span></span><span class="line"><span class="cl"><span class="s2"> &#34;</span> Use Vim defaults instead of 100% vi compatibility
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> <span class="nv">backspace</span><span class="o">=</span><span class="m">2</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34; more powerful backspacing
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span> Don<span class="s1">&#39;t write backup file if vim is being called by &#34;crontab -e&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s1">au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#34; Don&#39;</span>t write backup file <span class="k">if</span> vim is being called by <span class="s2">&#34;chpass&#34;</span>
+</span></span><span class="line"><span class="cl">au BufWrite /private/etc/pw.* <span class="nb">set</span> nowritebackup nobackup
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">syntax on
+</span></span><span class="line"><span class="cl"><span class="s2">&#34; 语法高亮
+</span></span></span><span class="line"><span class="cl"><span class="s2">autocmd InsertLeave * se nocul
+</span></span></span><span class="line"><span class="cl"><span class="s2">autocmd InsertEnter * se cul
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span> 用浅色高亮当前行
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> <span class="nv">tabstop</span><span class="o">=</span><span class="m">4</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34; Tab键的宽度
+</span></span></span><span class="line"><span class="cl"><span class="s2">set softtabstop=4
+</span></span></span><span class="line"><span class="cl"><span class="s2">set shiftwidth=4
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>  统一缩进为4
+</span></span><span class="line"><span class="cl"><span class="s2">&#34; 鼠标定位光标
+</span></span></span><span class="line"><span class="cl"><span class="s2">set mouse=a
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span> <span class="nb">set</span> number
+</span></span><span class="line"><span class="cl"><span class="s2">&#34; 显示行号
+</span></span></span><span class="line"><span class="cl"><span class="s2">colorscheme pablo
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span> 设置颜色主题
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> ruler
+</span></span><span class="line"><span class="cl"><span class="s2">&#34; 在编辑过程中，在右下角显示光标位置的状态行
+</span></span></span><span class="line"><span class="cl"><span class="s2">set scrolloff=3
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span> 光标移动到buffer的顶部和底部时保持3行距离
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s2">&#34; Plugin &#39;ybian/smartim&#39;
+</span></span></span></code></pre></div><h3 class="relative group">git alias 配置推荐（展示更丰富的分支commit信息） 
+    <div id="git-alias-配置推荐展示更丰富的分支commit信息" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#git-alias-%e9%85%8d%e7%bd%ae%e6%8e%a8%e8%8d%90%e5%b1%95%e7%a4%ba%e6%9b%b4%e4%b8%b0%e5%af%8c%e7%9a%84%e5%88%86%e6%94%afcommit%e4%bf%a1%e6%81%af" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global alias.last<span class="o">=</span>log -1 HEAD
+</span></span><span class="line"><span class="cl">git config --global alias.logg<span class="o">=</span>log --graph --decorate --oneline --simplify-by-decoration --all
+</span></span><span class="line"><span class="cl">git config --global alias.cfgls<span class="o">=</span>config --lis
+</span></span><span class="line"><span class="cl">git config --global alias.lg<span class="o">=</span>log --graph --decorate --oneline --all
+</span></span><span class="line"><span class="cl">git config --global alias.caa<span class="o">=</span>commit -a --amend
+</span></span><span class="line"><span class="cl">git config --global alias.st<span class="o">=</span>status
+</span></span><span class="line"><span class="cl">git config --global alias.l<span class="o">=</span>log --color --graph --pretty<span class="o">=</span>format:<span class="s1">&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39;</span> --abbrev-commit  --decorate  --all
+</span></span></code></pre></div>
         </div>
                 
         
