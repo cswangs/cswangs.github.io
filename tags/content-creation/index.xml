@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>content creation on 王春盛</title>
+    <title>Content Creation on 王春盛</title>
     <link>/tags/content-creation/</link>
-    <description>Recent content in content creation on 王春盛</description>
+    <description>Recent content in Content Creation on 王春盛</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 王春盛</copyright>
     <lastBuildDate>Sun, 31 Dec 2023 23:16:08 +0800</lastBuildDate><atom:link href="/tags/content-creation/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>为什么写博客？</title>
       <link>/blog/why-blog/</link>

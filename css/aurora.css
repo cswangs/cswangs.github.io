@@ -1,0 +1,91 @@
+.aurora-container {
+  width: 100% !important;
+  height: 20vh !important;
+  min-width: 300px;
+  min-height: 250px;
+  max-height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 98%;
+}
+
+.aurora-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1;
+}
+
+.aurora-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px rgba(255,255,255,0.7);
+  width: 98%;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.aurora-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+  color: white !important;
+  text-shadow: 0 0 15px rgba(100, 149, 237, 0.8), 0 0 30px rgba(100, 149, 237, 0.6);
+  animation: glow 2s infinite alternate;
+}
+
+.aurora-content p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-shadow: 0 0 10px rgba(100, 149, 237, 0.7);
+  margin: 0.4rem 0;
+}
+
+.intro-text {
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  margin: 0.4rem 0;
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-shadow: 0 0 8px rgba(100, 149, 237, 0.6);
+}
+
+.aurora-link {
+  color: #90caf9 !important;
+  text-decoration: none;
+  border-bottom: 1px dotted #90caf9;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px rgba(144, 202, 249, 0.8);
+}
+
+.aurora-link:hover {
+  color: #42a5f5 !important;
+  border-bottom: 1px solid #42a5f5;
+  text-shadow: 0 0 12px rgba(66, 165, 245, 0.9);
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(100, 149, 237, 0.8), 0 0 20px rgba(100, 149, 237, 0.5);
+  }
+  to {
+    text-shadow: 0 0 15px rgba(100, 149, 237, 0.9), 0 0 30px rgba(100, 149, 237, 0.7), 0 0 40px rgba(100, 149, 237, 0.5);
+  }
+} 
